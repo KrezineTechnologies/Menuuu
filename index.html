@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mumbai Royal Menu</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+    embed {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+    /* Fallback link shown only if the PDF fails to embed */
+    .fallback {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #f5f5f5;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <embed src="menu.pdf" type="application/pdf" />
+  <a class="fallback" href="menu.pdf" target="_blank" rel="noopener">
+    Open the menu PDF
+  </a>
+</body>
+</html>
